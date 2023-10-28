@@ -1,0 +1,132 @@
+{
+  "data": {
+    "dir": "f_8312_ls360",
+    "sr": 16000,
+    "wav_len": 65536
+  },
+  "model_params": {
+    "label_len": 1,
+    "L": 16,
+    "enc_dim": 512,
+    "num_enc_layers": 8,
+    "dec_dim": 256,
+    "num_dec_layers": 1,
+    "dec_buf_len": 13,
+    "dec_chunk_size": 13,
+    "out_buf_len": 4,
+    "use_pos_enc": true,
+    "decoder_dropout": 0.1,
+    "convnet_config": {
+      "convnet_prenet": true,
+      "out_channels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "kernel_sizes": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "dilations": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "dropout": 0.5,
+      "combine_residuals": null,
+      "skip_connection": "add",
+      "use_residual_blocks": true
+    }
+  },
+  "optim": {
+    "lr": 5e-4,
+    "betas": [
+      0.8,
+      0.999
+    ],
+    "eps": 1e-9,
+    "weight_decay": 0.0
+  },
+  "lr_sched": {
+    "lr_decay": 0.999
+  },
+  "batch_size": 9,
+  "eval_batch_size": 18,
+  "fp16_run": false,
+  "segment_size": 10240,
+  "log_interval": 1000,
+  "checkpoint_interval": 5000,
+  "aux_mel": {
+    "type": "multires",
+    "c": 10,
+    "params": {
+      "num_mels": 80,
+      "hop_size": [
+        120,
+        240,
+        50
+      ],
+      "win_size": [
+        600,
+        1200,
+        240
+      ],
+      "n_fft": [
+        1024,
+        2048,
+        512
+      ],
+      "fmin": 0.0,
+      "fmax": null
+    }
+  },
+  "aux_fairseq": {
+    "checkpoint_path": "llvc_models/models/embeddings/hubert_base_ls960.pt",
+    "c": 100000
+  },
+  "disc_loss_c": 1,
+  "feature_loss_c": 2,
+  "seed": 1234,
+  "test_dir": "test_wavs",
+  "discriminator": "rvc",
+  "periods": [
+    2,
+    3,
+    5,
+    7,
+    11,
+    17,
+    23,
+    37
+  ],
+  "grad_clip_value": null,
+  "grad_clip_threshold": 1.0
+}

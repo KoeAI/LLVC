@@ -1,0 +1,4 @@
+numpy==1.23.1
+resemblyzer==0.1.3 
+wvmos @ git+https://github.com/AndreevP/wvmos.git@85ff6c41e6b03282ac0a7d8e84641b5893c95c3c
+auraloss==0.4.0 

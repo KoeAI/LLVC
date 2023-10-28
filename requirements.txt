@@ -1,0 +1,17 @@
+tensorboard
+scipy
+torchmetrics
+speechbrain
+auraloss
+librosa
+fairseq @ git+https://github.com/One-sixth/fairseq.git
+numpy
+
+# I think these are the changes needed for minimal_rvc to run
+gradio==3.36.1
+faiss-cpu==1.7.3
+pyworld==0.3.2
+soundfile==0.12.1
+ffmpeg-python==0.2.0
+pydub==0.25.1
+torchcrepe==0.0.20

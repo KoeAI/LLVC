@@ -1,0 +1,4 @@
+.vscode
+*__pycache__*
+f_8312_ls360/*
+LibriSpeech/*
