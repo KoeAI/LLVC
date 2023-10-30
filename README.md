@@ -1,7 +1,9 @@
 # LLVC: **L**ow-Latency **L**ow-Resource **V**oice **C**onversion
-This repository contains the code necessary to train Koe AI's LLVC models and to reproduce the LLVC paper: https://koe.ai/papers/llvc.pdf
+This repository contains the code necessary to train Koe AI's LLVC models and to reproduce the LLVC paper.
 
-LLVC Samples: https://koeai.github.io/llvc-demo/
+LLVC paper: https://koe.ai/papers/llvc.pdf
+
+LLVC samples: https://koeai.github.io/llvc-demo/
 
 Windows executable: https://koe.ai/recast/download/
 
