@@ -230,7 +230,7 @@ def main():
         "--window_ms",
         type=int,
         default=100,
-        help="audio frame latency in miliseconds",
+        help="audio frame latency in milliseconds",
     )
     parser.add_argument(
         "--crossfade_overlap",
