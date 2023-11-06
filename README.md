@@ -60,3 +60,17 @@ Many of the modules written in `minimal_rvc/` are based on the following reposit
 - https://github.com/ddPn08/rvc-webui
 - https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
 - https://github.com/teftef6220/Voice_Separation_and_Selection
+
+
+## Citation
+If you find out work relevant to your research, please cite:
+```
+@misc{sadov2023lowlatency,
+      title={Low-latency Real-time Voice Conversion on CPU}, 
+      author={Konstantine Sadov and Matthew Hutter and Asara Near},
+      year={2023},
+      eprint={2311.00873},
+      archivePrefix={arXiv},
+      primaryClass={cs.SD}
+}
+```
